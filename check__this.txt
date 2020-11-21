@@ -1,0 +1,188 @@
+
+
+sufyanadmob@gmail.com
+Promotional for admob account code 74JR7NRYYAYXLR
+
+Passport number ?  DQ4426871
+
+test ad for facebook 
+
+
+    <string name="facebookbannerad">IMG_16_9_APP_INSTALL#124134865671095_124844168933498</string>
+    <string name="facebookIntertitialad">IMG_16_9_APP_INSTALL#124134865671095_124137742337474</string>
+    <string name="facebookNativeAd">IMG_16_9_APP_INSTALL#907264533055772_941840739598151</string>
+
+
+////////////// banner ad code facebook
+//////////////////////////////////////
+
+        adView = new AdView(this, getString(R.string.facebook_banner_ad_id), AdSize.BANNER_HEIGHT_90);
+        LinearLayout adContainer = (LinearLayout) findViewById(R.id.banner_container);
+        adContainer.addView(adView);
+        AdListener adListener = new AdListener() {
+            @Override
+            public void onError(Ad ad, AdError adError) {
+
+            }
+
+            @Override
+            public void onAdLoaded(Ad ad) {
+
+            }
+
+            @Override
+            public void onAdClicked(Ad ad) {
+
+            }
+
+            @Override
+            public void onLoggingImpression(Ad ad) {
+
+            }
+        };
+
+        AdView.AdViewLoadConfig loadAdConfig = adView.buildLoadAdConfig()
+                .withAdListener(adListener)
+                .build();
+
+        adView.loadAd(loadAdConfig);
+
+////////////////////////////////////////////////////////
+
+
+////////////////////////////////////////////////////////  facebook intertitail ad code 
+
+        interstitialAd = new InterstitialAd(this, getString(R.string.facebook_intertitial_id));
+
+        InterstitialAdListener interstitialAdListener = new InterstitialAdListener() {
+            @Override
+            public void onInterstitialDisplayed(Ad ad) {
+
+            }
+
+            @Override
+            public void onInterstitialDismissed(Ad ad) {
+
+                finish();
+
+            }
+
+            @Override
+            public void onError(Ad ad, AdError adError) {
+                Log.e(TAG, "Fb failed :: " + adError.toString());
+            }
+
+            @Override
+            public void onAdLoaded(Ad ad) {
+                Log.e(TAG, "onAdLoaded: ");
+              
+            }
+
+            @Override
+            public void onAdClicked(Ad ad) {
+
+            }
+
+            @Override
+            public void onLoggingImpression(Ad ad) {
+
+            }
+        };
+        
+        interstitialAd.loadAd(interstitialAd.buildLoadAdConfig()
+                .withAdListener(interstitialAdListener)
+                .withCacheFlags(ALL)
+                .build());
+
+        interstitialAd.loadAd();
+
+////////////////////////////////////////////////////////////////////////
+
+        nativeAd = new NativeAd(this, getString(R.string.facebookNativeAd));
+        NativeAdListener nativeAdListener = new NativeAdListener() {
+            @Override
+            public void onMediaDownloaded(Ad ad) {
+                // Native ad finished downloading all assets
+                Log.e(TAG, "Native ad finished downloading all assets.");
+            }
+
+            @Override
+            public void onError(Ad ad, AdError adError) {
+                // Native ad failed to load
+                Log.e(TAG, "Native ad failed to load: " + adError.getErrorMessage());
+            }
+
+            @Override
+            public void onAdLoaded(Ad ad) {
+                // Native ad is loaded and ready to be displayed
+                Log.d(TAG, "Native ad is loaded and ready to be displayed!");
+
+             /*   // Race condition, load() called again before last ad was displayed
+                if (nativeAd == null || nativeAd != ad) {
+                    return;
+                }
+                // Inflate Native Ad into Container
+                inflateAd(nativeAd);*/
+
+                // Set the Native Ad attributes
+                NativeAdViewAttributes viewAttributes = new NativeAdViewAttributes()
+                        .setBackgroundColor(Color.BLACK)
+                        .setTitleTextColor(Color.WHITE)
+                        .setDescriptionTextColor(Color.LTGRAY)
+                        .setButtonColor(Color.WHITE)
+                        .setButtonTextColor(Color.BLACK);
+
+                View adView = NativeAdView.render(MusicSufiDownloadedActivity.this, nativeAd, viewAttributes);
+                LinearLayout nativeAdContainer = (LinearLayout) findViewById(R.id.native_ad_container);
+                // Add the Native Ad View to your ad container
+                nativeAdContainer.addView(adView, new LinearLayout.LayoutParams(MATCH_PARENT, 800));
+
+            }
+
+            @Override
+            public void onAdClicked(Ad ad) {
+                // Native ad clicked
+                Log.d(TAG, "Native ad clicked!");
+            }
+
+            @Override
+            public void onLoggingImpression(Ad ad) {
+                // Native ad impression
+                Log.d(TAG, "Native ad impression logged!");
+            }
+        };
+
+        // Request an ad
+        nativeAd.loadAd(nativeAd.buildLoadAdConfig()
+                .withAdListener(nativeAdListener)
+                .build());
+
+        
+ //////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+https://www.mediafire.com/file/rxaqf8j9hq45hkd/TVTools_AlterID_GetPCApps.com.rar/file
+
+
+
+*** 4+ years of experience
+*** Best price with 100% satisfaction.
+*** Working 6 days : Support for 7 days a week.
+
+
+
+ Hello Brother ! I am a professional Android Developer with about 3 years of experience publish more 
+ than 30 apps. Integrating in-app purchase is about my daily task . I can provide you quality work Asap.
+
+
+ Hi sir, I see you post that you want to integrate multiple in app purchase in your android application.
+ Well, I am interested in your project and I can do this work for you. Looking forward to help you with
+ my services. Regards Mujahid Nafees
+
+
+
++923076354474
+
+add me on whatsapp
